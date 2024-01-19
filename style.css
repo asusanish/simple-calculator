@@ -17,7 +17,7 @@ html, body{
 
 .calculator{
     max-width: 500px;
-    height: 600px;
+    /* height: 600px; */
     border-radius: 20px;
     background-color: #0e0d0dd5;
     overflow: hidden;
@@ -25,18 +25,65 @@ html, body{
 
 .calculator-content{
     padding: 20px;
+    position: relative;
 }
 
-.calculator .calculator-content .buttons button{
+
+.input input{
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 0;
+    font-size: 20px;
+    border: none;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.upperButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    /* width: 100%; */
+    margin: 20px auto;
+}
+
+button{
     width: 50px;
     padding: 10px;
     font-size: 30px;
     background-color: #d4d2d241;
     color: #fff;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
+
+button:hover{
+    background-color: #d4d2d267;
+}
+button:active{
+    background-color: #d4d2d2a2;
+}
+
+.calculator .calculator-content .buttons{
+    display: flex;
+    gap: 20px;
+}
+
 
 .calculator .calculator-content .operands{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+.calculator .calculator-content .operators{
+    display: grid;
 }
