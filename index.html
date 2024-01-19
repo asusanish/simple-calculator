@@ -15,13 +15,13 @@
     <div class="calculator">
       <div class="calculator-content">
         <div class="input">
-          <input type="text" readonly />
+          <input id="input" type="text" readonly />
         </div>
 
         <div class="line"></div>
 
         <div class="upperButton">
-          <button onclick="clear()">C</button>
+          <button onclick="clearDisplay()">C</button>
           <button onclick="appendToDisplay('-')">+/-</button>
           <button onclick="appendToDisplay('%')">%</button>
           <button onclick="appendToDisplay('/')">
@@ -40,9 +40,9 @@
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('7')">0</button>
-            <button onclick="appendToDisplay('7')">00</button>
-            <button onclick="appendToDisplay('7')">.</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('.')">.</button>
           </div>
 
           <div class="buttons operators">
@@ -54,7 +54,10 @@
         </div>
       </div>
     </div>
-
+    
+    <footer>
+        <p>&copy Anish Chaudhary</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
